@@ -489,6 +489,14 @@ font-size: 2em;
     display: block;
   }
 
+.hamburger i {
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.hamburger i.fa-xmark {
+  transform: rotate(180deg);
+  
+}
   nav {
     box-shadow: 0px 0px 0px;
    width: 100%;
@@ -552,6 +560,8 @@ font-size: 2em;
     height: 100vh;
     padding: 2em 1em;
     text-align: center;
+    background-color: #1E002B;
+    background-image: none;
   }
 
   .content {
@@ -563,7 +573,7 @@ font-size: 2em;
     height: 30%;
     width: 30%;
     border: none;
-    border-radius: 50%;
+    border-radius: 10%;
     margin-top: 2rem;
   }
   .content .image,
@@ -736,3 +746,4 @@ text-align: left;
 }
 
 }
+
