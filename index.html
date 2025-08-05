@@ -182,9 +182,14 @@ I enjoy turning ideas into code and continuously learning new technologies to st
 <script>
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('nav ul');
+  const icon = hamburger.querySelector('i'); // Get the <i> inside .hamburger
 
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
+
+    // Toggle the icon between bars and x
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-xmark'); // use fa-times if you're using older Font Awesome
   });
 </script>
 
